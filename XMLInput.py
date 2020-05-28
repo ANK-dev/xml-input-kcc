@@ -101,7 +101,6 @@ def main():
 
     # Remove file path from lists
     if platform.system() == 'Windows':
-        #comic = re.search('(?<=\.\\\\)([\s\S]*)', comic).group()    #Windows path structure (.\\Example\)
         comic = re.search(r'(?<=\.\\)([\s\S]*)', comic).group()    #Windows path structure (.\\Example\)
 
     else:
